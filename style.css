@@ -1,0 +1,316 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    width: 84%;
+    background-color: white;
+    justify-content: space-between;
+    margin-left: 100px;
+    align-items: center;
+}
+
+#logo {
+    width: 130px;
+}
+
+.link {
+    display: inline-block;
+    /* inline block is used to make the element straght lin */
+    margin: 10px 20px;
+}
+
+.a-link {
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+}
+
+.a-link:hover {
+    color: rgb(98, 62, 62);
+}
+
+#lastname {
+    text-decoration: none;
+    color: orange;
+}
+
+.title {
+    margin-top: 13%;
+    margin-left: 12%;
+}
+
+.tittle_h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.Download {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    display: inline-block;
+    margin: 25px;
+    border-radius: 10px;
+}
+
+.Download:hover {
+    background-color: orange;
+    color: black;
+}
+
+.images {
+    width: 45%;
+    height: 85%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+
+.imagegroup {
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 2s;
+}
+
+.images:hover #girl {
+    left: 40%;
+}
+
+.images:hover #shape {
+    bottom: 40px;
+}
+
+#about {
+    margin: 20% 8% 0% 8%;
+}
+
+.heading {
+    text-align: center;
+
+}
+
+.heading h1 {
+    font-size: 31px;
+    font-style: italic;
+}
+
+.heading span {
+    color: orange;
+    font-size: 20px;
+}
+
+.about_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* one fr =225px */
+    column-gap: 2rem;
+    /* one rem =16px */
+    margin-top: 3rem;
+}
+
+.about_img {
+    width: 80%;
+    border-radius: 10px;
+
+}
+
+.about_para {
+    text-align: justify;
+    /* To aline the text correct order */
+}
+
+.info {
+    margin-top: 25px;
+}
+
+.info_box1 span {
+    margin-left: 1rem;
+    font-size: 20px;
+
+}
+
+.info_box2 {
+    margin-top: 25px
+}
+
+.info_box2 span {
+
+    font-size: 20px;
+    padding-top: 25px;
+    margin-left: 1rem;
+
+}
+
+.info_box3 {
+    margin-top: 25px
+}
+
+.info_box3 span {
+    font-size: 20px;
+    padding-top: 25px;
+    margin-left: 1rem;
+}
+
+.info_box4 {
+    margin-top: 25px
+}
+
+.info_box4 span {
+    font-size: 20px;
+    padding-top: 25px;
+    margin-left: 1rem;
+}
+
+.heading2 {
+    text-align: center;
+}
+
+.heading2 h1 {
+    font-size: 50px;
+    font-style: italic;
+}
+
+.heading2 span {
+    color: orange;
+    font-size: 20px;
+}
+
+.skill_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    margin-top: 3rem;
+}
+
+#skill {
+    margin: 6% 8% 0% 8%;
+}
+
+.progress {
+    margin-top: 10px;
+}
+
+.progress_bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1rem 0px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.bar {
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.html_bar {
+    width: 95%;
+    background-color: orange;
+}
+
+.html_bar2 {
+    width: 70%;
+    background-color: orange;
+}
+
+.html_bar3 {
+    width: 65%;
+    background-color: orange;
+}
+
+.html_bar4 {
+    width: 50%;
+    background-color: orange;
+}
+
+.skill_img {
+    width: 90%;
+    padding-left: 4rem;
+}
+
+#contact {
+    margin: 2% 8% 0% 8%;
+}
+
+.icon_set {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    /* gap: 20px; */
+
+}
+
+.icon, .up_arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 15px;
+
+}
+.icon i{
+    color: black;
+}
+footer{
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 30px;
+
+}
+span{
+    color: orange;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right, red , yellow );
+}
+.icon :hover i{
+     color: white;
+     animation: shake 0.75s;
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg)
+    }
+    40%{
+        transform: rotate(15deg);
+
+    }
+
+}
+.up_arrow{
+    background-image: linear-gradient(to bottom right,#AF1740, orange);
+    float: right;
+    margin: 20px 10px;
+}
+html{
+    scroll-behavior: smooth;
+}
